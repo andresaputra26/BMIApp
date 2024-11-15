@@ -132,8 +132,8 @@ fun getBMICategory(bmi: Double?): String {
     return when {
         bmi == null -> ""
         bmi < 18.5 -> "Underweight"
-        bmi in 18.5..24.9 -> "Normal weight"
-        bmi in 25.0..29.9 -> "Overweight"
+        bmi in 18.5..24.99999 -> "Normal weight"
+        bmi in 25.0..29.99999 -> "Overweight"
         else -> "Obesity"
     }
 }
